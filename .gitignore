@@ -22,3 +22,27 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Dossiers MCreator et IDE
+.mcreator/
+.eclipse/
+.gradle/
+.vscode/
+bin/
+out/
+
+# Fichiers de configuration spécifiques à l'utilisateur
+.settings/
+.classpath
+.project
+*.launch
+
+# Gradle
+build/
+gradleapp/
+.gradle/
+
+# Logs et divers
+logs/
+run/
+*.log
