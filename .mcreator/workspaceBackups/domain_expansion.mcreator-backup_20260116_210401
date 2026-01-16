@@ -1,0 +1,90 @@
+{
+  "mod_elements": [
+    {
+      "name": "UnlimitedVoid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unlimited_void",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/domain_expansion/models/item/unlimited_void.json",
+          "src/main/java/net/domainexpansion/item/UnlimitedVoidItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DomainOcculte",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "domain_occulte",
+      "metadata": {
+        "files": [
+          "src/main/java/net/domainexpansion/block/DomainOcculteBlock.java",
+          "src/main/resources/assets/domain_expansion/models/block/domain_occulte.json",
+          "src/main/resources/assets/domain_expansion/models/item/domain_occulte.json",
+          "src/main/resources/assets/domain_expansion/blockstates/domain_occulte.json",
+          "src/main/resources/data/domain_expansion/loot_tables/blocks/domain_occulte.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "domainopen",
+      "files": [
+        "domain_open"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.domainopen": "",
+      "item.domain_expansion.unlimited_void": "Unlimited Void",
+      "block.domain_expansion.domain_occulte": "Domain Occulte"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/domainexpansion/init/DomainExpansionModBlocks.java",
+      "src/main/java/net/domainexpansion/init/DomainExpansionModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/domainexpansion/DomainExpansionMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/assets/domain_expansion/sounds.json",
+      "src/main/java/net/domainexpansion/init/DomainExpansionModSounds.java",
+      "src/main/java/net/domainexpansion/init/DomainExpansionModTabs.java"
+    ],
+    "betteranimations_models": {},
+    "betteranimations_perspectives": {
+      "UnlimitedVoid": "All perspectives"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "domain_expansion",
+    "modName": "Domain Expansion",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.domainexpansion"
+  },
+  "mcreatorVersion": 202500345720
+}

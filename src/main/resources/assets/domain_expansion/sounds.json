@@ -1,0 +1,27 @@
+{
+  "domainopen": {
+    "sounds": [
+      {
+        "name": "domain_expansion:domain_open",
+        "stream": false
+      }
+    ]
+  },
+  "domainambient1": {
+    "subtitle": "subtitles.domain_ambiance",
+    "sounds": [
+      {
+        "name": "domain_expansion:domainambient1",
+        "stream": true
+      }
+    ]
+  },
+  "outdomain": {
+    "sounds": [
+      {
+        "name": "domain_expansion:outdomain",
+        "stream": false
+      }
+    ]
+  }
+}

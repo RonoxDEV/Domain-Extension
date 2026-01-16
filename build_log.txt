@@ -1,0 +1,61 @@
+Reusing configuration cache.
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava FAILED
+Note: SpongePowered MIXIN Annotation Processor Version=0.8.5
+Note: Supported obfuscation types: ObfuscationServiceMCP supports [searge,notch]
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\ClientEvents.java:24: error: cannot find symbol
+                if (mc.player.getUUID().equals(domain.getTargetUUID())) {
+                                                     ^
+  symbol:   method getTargetUUID()
+  location: variable domain of type DomainEntity
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\ClientEvents.java:42: error: cannot find symbol
+                if (mc.player.getUUID().equals(domain.getTargetUUID())) {
+                                                     ^
+  symbol:   method getTargetUUID()
+  location: variable domain of type DomainEntity
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\renderer\DomainEntityRenderer.java:18: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+    private static final ResourceLocation NOISE = new ResourceLocation(DomainExpansionMod.MODID,
+                                                  ^
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\renderer\DomainEntityRenderer.java:20: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+    private static final ResourceLocation VOID_BG = new ResourceLocation(DomainExpansionMod.MODID,
+                                                    ^
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\renderer\DomainEntityRenderer.java:22: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+    private static final ResourceLocation SHADER_ID = new ResourceLocation(DomainExpansionMod.MODID, "unlimited_void");
+                                                      ^
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\renderer\DomainEntityRenderer.java:37: error: cannot find symbol
+        ShaderProgram shader = VeilRenderSystem.renderer().getShader(SHADER_ID);
+                                                          ^
+  symbol:   method getShader(ResourceLocation)
+  location: class VeilRenderer
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\client\renderer\DomainEntityRenderer.java:41: error: bad operand types for binary operator '!='
+            if (shader.getUniform("GameTime") != null) {
+                                              ^
+  first type:  int
+  second type: <null>
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\DomainExpansionMod.java:50: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+			new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
+			^
+C:\Users\Maxence\MCreatorWorkspaces\domain_expansion\src\main\java\net\domainexpansion\item\DomainActivatorItem.java:48: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+                        ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("domain_expansion", "domain_open")),
+                                                              ^
+4 errors
+5 warnings
+
+[Incubating] Problems report is available at: file:///C:/Users/Maxence/MCreatorWorkspaces/domain_expansion/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  Note: SpongePowered MIXIN Annotation Processor Version=0.8.5
+  4 errors
+  5 warnings
+
+* Try:
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+BUILD FAILED in 1s
+2 actionable tasks: 1 executed, 1 up-to-date
+Configuration cache entry reused.

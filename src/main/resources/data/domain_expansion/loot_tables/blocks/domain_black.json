@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "domain_expansion:blocks/domain_black",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "domain_expansion:domain_black"
+        }
+      ]
+    }
+  ]
+}

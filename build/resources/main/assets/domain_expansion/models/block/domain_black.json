@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "domain_expansion:block/domain",
+    "up": "domain_expansion:block/domain",
+    "north": "domain_expansion:block/domain",
+    "east": "domain_expansion:block/domain",
+    "south": "domain_expansion:block/domain",
+    "west": "domain_expansion:block/domain",
+    "particle": "domain_expansion:block/domain"
+  },
+  "render_type": "solid"
+}
