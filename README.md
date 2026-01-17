@@ -1,7 +1,44 @@
 ##🌌 Project Unbound
 Project Unbound is an ambitious Minecraft mod designed to push the boundaries of the vanilla experience. It introduces a high-fidelity Domain Expansion system inspired by Jujutsu Kaisen, featuring advanced spatial manipulation and custom game physics.
 
-✨ Key Features
+✨ Key Features🌌 DOMAIN EXPANSION
+Domain Expansion is a cinematic combat mod for Minecraft that recreates with surgical precision the "Muryōkūsho" (Unlimited Void) territory expansion. This mod prioritizes high-end visual immersion, premium soundscapes, and absolute graphical fidelity.
+
+✨ KEY FEATURES
+[GRAPHICS & IMMERSION]: 🌑 Unlimited Void Rendering: A massive animated sphere featuring custom fog shaders. The incantation phase plunges the caster into a dark, nebulous void before revealing an "Occult" dome that completely rewrites the world's visual reality.
+
+[CINEMATIC EFFECTS]: 💥 Deployment Impact: The mod integrates a custom Screen Shake system and shockwave particles (Sonic Booms) during both deployment and collapse, providing a raw sensation of overwhelming power.
+
+[TECHNICAL COMBAT]: ⚖️ The Binding Vow: Strict spatial rules are enforced. Any entity attempting to breach the barrier via teleportation or ender pearls is instantly executed. Upon activation, the domain isolates a single target and subjects it to total immobilization (Infinite Stasis).
+
+[REALITY RESTORATION]: ⏳ Spatial Reconstruction: The domain physically overwrites the terrain with indestructible blocks. Once the timer expires or the caster/target dies, a fluid 8-second animation retracts the sphere and perfectly restores the original world.
+
+📸 MEDIA
+
+🛠 TECHNICAL DETAILS
+Engine: Forge 1.20.1
+
+Audio: Dual-channel sound management (Immersive 30s Void ambience + MASTER-priority exit sound).
+
+Rendering: Frame-perfect Client/Server synchronization for smooth 60 FPS+ animations.
+
+VFX: Hand-sign animation support and proximity-based fog manipulation.
+
+📥 INSTALLATION
+Download the latest .jar from the Releases section.
+
+Drop it into your mods folder.
+
+Launch and expand your territory!
+
+🤝 COMMISSIONS & CONTACT
+Need a custom feature or a dedicated mod for your server?
+
+Discord: ronoxdevlopper
+
+Email: ronoxdev.contact@gmail.com
+
+Created with ❤️ by RonoxDEV
 [Domain Expansion]: 🌑 Infinite Void Mechanic: Deploy a massive, visually stunning spherical domain that overwrites the world. It features a custom 14-second expansion sequence with high-pitched ambient soundscapes and immersive fog.
 
 [The Binding Vow]: ⚖️ Inviolable Pact: A robust security system that enforces the rules of the domain. Any entity attempting to escape the 30-block radius via teleportation or Ender Pearls is instantly executed with a custom death message.
