@@ -1,4 +1,4 @@
-🌌 Project Unbound
+##🌌 Project Unbound
 Project Unbound is an ambitious Minecraft mod designed to push the boundaries of the vanilla experience. It introduces a high-fidelity Domain Expansion system inspired by Jujutsu Kaisen, featuring advanced spatial manipulation and custom game physics.
 
 ✨ Key Features
