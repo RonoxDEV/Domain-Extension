@@ -1,7 +1,7 @@
 # 🌌 Domain Expansion: Unlimited Void
 
 [![Tier](https://img.shields.io/badge/Portfolio-Tier_4_--_CustomMod-purple?style=for-the-badge)](https://ronoxdev.github.io)
-[![API](https://img.shields.io/badge/Minecraft-Forge%20%2F%20Fabric-orange?style=for-the-badge)](https://minecraft.net)
+[![API](https://img.shields.io/badge/Minecraft-Forge-orange?style=for-the-badge)](https://minecraft.net)
 [![Graphics](https://img.shields.io/badge/Render-Native_Core_Shaders-red?style=for-the-badge)]()
 
 A high-performance, dependency-free implementation of Gojo Satoru's **Unlimited Void** (Jujutsu Kaisen). This project serves as a technical demonstration of **Native Core Shaders** injection and procedural geometry within the Minecraft rendering pipeline.
