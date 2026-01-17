@@ -26,7 +26,6 @@ The domain is not a static 3D model. It uses a **procedural mesh generator**:
 ### 3. Client-Side Immersive Logic
 To simulate the "infinite information" brain-overload effect:
 * **Camera Shake**: Randomized pitch and yaw offsets applied directly to the player's view matrix.
-* **Input Neutralization**: High-priority event listeners that block mouse clicks and specific keybinds for the target player.
 * **State Machine**: A robust server-client synchronization system managing the lifecycle of the domain (`OPENING` -> `ACTIVE` -> `CLOSING`).
 
 ---
