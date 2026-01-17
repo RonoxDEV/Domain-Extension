@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ignorer les fichiers HTML générés par MCreator ou les walkthroughs
+*.html linguist-vendored
+*.css linguist-vendored
+
+# Si tu as un dossier spécifique pour la doc/UI (ex: folder "pages")
+pages/* linguist-vendored
+
+# Forcer la détection du Java et GLSL s'ils sont dans des dossiers bizarres
+*.java linguist-detectable
+*.vsh linguist-detectable
+*.fsh linguist-detectable
