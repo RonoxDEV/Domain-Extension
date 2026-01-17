@@ -1,78 +1,56 @@
-##🌌 Project Unbound
-Project Unbound is an ambitious Minecraft mod designed to push the boundaries of the vanilla experience. It introduces a high-fidelity Domain Expansion system inspired by Jujutsu Kaisen, featuring advanced spatial manipulation and custom game physics.
+# 🌌 Domain Expansion: Unlimited Void
 
-✨ Key Features🌌 DOMAIN EXPANSION
-Domain Expansion is a cinematic combat mod for Minecraft that recreates with surgical precision the "Muryōkūsho" (Unlimited Void) territory expansion. This mod prioritizes high-end visual immersion, premium soundscapes, and absolute graphical fidelity.
+[![Tier](https://img.shields.io/badge/Portfolio-Tier_4_--_CustomMod-purple?style=for-the-badge)](https://ronoxdev.github.io)
+[![API](https://img.shields.io/badge/Minecraft-Forge%20%2F%20Fabric-orange?style=for-the-badge)](https://minecraft.net)
+[![Graphics](https://img.shields.io/badge/Render-Native_Core_Shaders-red?style=for-the-badge)]()
 
-✨ KEY FEATURES
-[GRAPHICS & IMMERSION]: 🌑 Unlimited Void Rendering: A massive animated sphere featuring custom fog shaders. The incantation phase plunges the caster into a dark, nebulous void before revealing an "Occult" dome that completely rewrites the world's visual reality.
+A high-performance, dependency-free implementation of Gojo Satoru's **Unlimited Void** (Jujutsu Kaisen). This project serves as a technical demonstration of **Native Core Shaders** injection and procedural geometry within the Minecraft rendering pipeline.
 
-[CINEMATIC EFFECTS]: 💥 Deployment Impact: The mod integrates a custom Screen Shake system and shockwave particles (Sonic Booms) during both deployment and collapse, providing a raw sensation of overwhelming power.
+---
 
-[TECHNICAL COMBAT]: ⚖️ The Binding Vow: Strict spatial rules are enforced. Any entity attempting to breach the barrier via teleportation or ender pearls is instantly executed. Upon activation, the domain isolates a single target and subjects it to total immobilization (Infinite Stasis).
+## 🛠 Technical Overview
 
-[REALITY RESTORATION]: ⏳ Spatial Reconstruction: The domain physically overwrites the terrain with indestructible blocks. Once the timer expires or the caster/target dies, a fluid 8-second animation retracts the sphere and perfectly restores the original world.
+Unlike most visual mods that rely on heavy external APIs (like Veil or Iris), this project is built to be **lightweight and vanilla-compatible** by interacting directly with the game's low-level rendering system.
 
-📸 MEDIA
+### 1. Native GLSL Core Shaders
+The "Void" effect is achieved through custom **Fragment Shaders** injected into the native pipeline:
+* **Zero Dependency**: Optimized for performance by avoiding external library overhead.
+* **Complex Visuals**: Implements multiple noise layers (scrolling noise), distortion vectors, and a **Fresnel Edge Glow** to create a sense of infinite depth.
+* **Dynamic Transparency**: Real-time alpha-blending management for the expansion/retraction phases.
 
-🛠 TECHNICAL DETAILS
-Engine: Forge 1.20.1
+### 2. Procedural UV Sphere Geometry
+The domain is not a static 3D model. It uses a **procedural mesh generator**:
+* **Math-based Mesh**: Generates vertices for a UV Sphere using stacks and slices directly in Java.
+* **Dynamic Scaling**: The radius is updated per-tick, allowing the domain to expand smoothly without model clipping or texture stretching.
 
-Audio: Dual-channel sound management (Immersive 30s Void ambience + MASTER-priority exit sound).
+### 3. Client-Side Immersive Logic
+To simulate the "infinite information" brain-overload effect:
+* **Camera Shake**: Randomized pitch and yaw offsets applied directly to the player's view matrix.
+* **Input Neutralization**: High-priority event listeners that block mouse clicks and specific keybinds for the target player.
+* **State Machine**: A robust server-client synchronization system managing the lifecycle of the domain (`OPENING` -> `ACTIVE` -> `CLOSING`).
 
-Rendering: Frame-perfect Client/Server synchronization for smooth 60 FPS+ animations.
+---
 
-VFX: Hand-sign animation support and proximity-based fog manipulation.
+## 🚀 Usage & Implementation
 
-📥 INSTALLATION
-Download the latest .jar from the Releases section.
+1. **Activation**: Use the `domain_expansion:domain_activator` item.
+2. **Targeting**: Right-click near a mob/player (range: 5-20 blocks).
+3. **Mechanics**:
+    * The system calculates the **geometric midpoint** between the caster and the target.
+    * Spawns the `DomainEntity` which serves as the anchor for the renderer.
+    * Applies **Slowness VI** and **Weakness VI** to all entities caught inside.
 
-Drop it into your mods folder.
+---
 
-Launch and expand your territory!
+## 🔬 Project Architecture
 
-🤝 COMMISSIONS & CONTACT
-Need a custom feature or a dedicated mod for your server?
+* `net.domainexpansion.client.shader`: Handles the native GLSL injection.
+* `net.domainexpansion.client.renderer`: Procedural mesh generation and buffer management.
+* `net.domainexpansion.entity`: Core logic for the expansion state machine.
 
-Discord: ronoxdevlopper
+---
 
-Email: ronoxdev.contact@gmail.com
-
-Created with ❤️ by RonoxDEV
-[Domain Expansion]: 🌑 Infinite Void Mechanic: Deploy a massive, visually stunning spherical domain that overwrites the world. It features a custom 14-second expansion sequence with high-pitched ambient soundscapes and immersive fog.
-
-[The Binding Vow]: ⚖️ Inviolable Pact: A robust security system that enforces the rules of the domain. Any entity attempting to escape the 30-block radius via teleportation or Ender Pearls is instantly executed with a custom death message.
-
-[Duel System]: ⚔️ Isolation Logic: Upon activation, the domain identifies the nearest target and expels all other entities. The target is completely immobilized (Slowness & Jump Block) during the 31-second active phase, forcing a true 1v1 confrontation.
-
-[Adaptive Physics]: 🧱 Dynamic Terrain Reconstruction: The engine replaces the floor with "Domain Occulte" blocks that are indestructible and self-regenerating. Once the domain ends (or the caster/target dies), the terrain is perfectly restored to its original state.
-
-📸 Media
-
-
-🛠 Technical Details
-Engine: Forge
-
-Target Version: 1.20.1
-
-Core Logic: Synced Entity Data for perfect Client/Server animation alignment.
-
-Audio: Dual-layer audio system (30s looping ambiance + Master-priority exit sound).
-
-📥 Installation
-Download the latest .jar from the Releases section.
-
-Drop it into your mods folder.
-
-Ensure you have the required dependencies installed.
-
-Launch and enjoy!
-
-🤝 Commissions & Contact
-Need a custom feature or a dedicated mod for your server?
-
-Discord: ronoxdevlopper
-
-Email: ronoxdev.contact@gmail.com
-
-Created with ❤️ by RonoxDEV
+## 👨‍💻 Developed by
+**RonoxDEV**
+*CS Student & Cybersecurity Enthusiast*
+*Focus: Low-level optimization, Game Engines, and Network Security.*
